@@ -45,10 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const lista = document.getElementById("contenedor");
 
         lista.innerHTML=``
-
-        valores.forEach(valor => {
+        while(valores.length){
             let basura = valores.pop();
-        })
+        }
 
         localStorage.setItem("valores",JSON.stringify(valores));
     })
